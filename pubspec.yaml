@@ -5,13 +5,13 @@ author:
 homepage:
 
 dependencies:
+  source_gen:
   flutter:
     sdk: flutter
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  source_gen:
   build_runner: 0.8.8
 
 # For information on the generic Dart part of this file, see the

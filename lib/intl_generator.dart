@@ -82,11 +82,11 @@ class IntlNameGenerator extends Generator {
     }
 
     for (ClassElement classElement in library.allElements.whereType<ClassElement>()) {
-      if (classElement.displayName == "SourceStrings") {
+      if (classElement.displayName == "Strings") {
         output.writeln("import 'package:intl/intl.dart';");
         output.writeln("import 'strings.dart';");
         output.writeln();
-        output.writeln('class Strings implements SourceStrings {');
+        output.writeln('class GeneratedStrings implements Strings {');
 
         // Process strings defined as property getter functions
         for (PropertyAccessorElement propElem in classElement.accessors) {
